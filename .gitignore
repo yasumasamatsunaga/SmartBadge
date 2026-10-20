@@ -1,0 +1,13 @@
+# Keep all third-party source footage and generated outputs out of the repository.
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.gif
+*.mpg
+*.mpeg
+*.m4v
+*.3gp
+*.ts
+.DS_Store
