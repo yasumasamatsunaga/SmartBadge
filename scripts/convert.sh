@@ -9,8 +9,8 @@ usage() {
   cat >&2 <<'EOF'
 Usage: scripts/convert.sh INPUT OUTPUT [START_SECONDS=0] [DURATION_SECONDS=9] [CROP=none] [WIDTH=270] [HEIGHT=270]
 
-Example (tested Pac-Man maze crop; input file must be provided separately):
-  scripts/convert.sh source.mkv badge.mp4 52 9 550:624:365:57 232 264
+Example (crop a region; adjust the coordinates for your input):
+  scripts/convert.sh my-video.mp4 badge-cropped.mp4 0 9 400:500:100:50 224 280
 
 Example (keep the source aspect ratio, within a 270 x 270 safe area):
   scripts/convert.sh my-video.mp4 badge.mp4 0 9 none 270 270
